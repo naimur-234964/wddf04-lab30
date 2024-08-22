@@ -167,6 +167,73 @@ html{
 }
 /* portfolio section end */
 
+/* pricing section start */
+.pricing-content{
+    background: var(--dark-color);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .5s;
+
+    &:hover{
+        background: var(--primary-color);
+
+        & .pricing-header{
+            background: var(--light-color);
+            color: var(--primary-color);
+        }
+    }
+}
+
+.pricing-header{
+    height: 150px;
+    width:  150px;
+    border-radius: 50%;
+    transition: .5s;
+
+    & h3{
+        font-size: 30px;
+    }
+    
+    & h3 sup{
+        top: -.7em;
+        font-size: 14px;
+    }
+
+    & h3 sub{
+        font-size: 20px;
+    }
+}
+
+.pricing-body{
+    & li{
+        margin-top: 20px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid var(--light-color);
+    }
+    
+    & li p{
+        margin: 0;
+    }
+
+    & li a{
+        background: var(--light-color);
+        color: var(--dark-color);
+        transition: .5s;
+
+        &:hover{
+            color: var(--primary-color);
+        }
+    }
+
+    & li:last-child{
+        padding-top: 20px;
+        border-bottom: 0px solid transparent;
+    }
+}
+/* pricing section end */
+
  main{
     height: 1300px;
 } 
